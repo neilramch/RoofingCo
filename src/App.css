@@ -1,0 +1,267 @@
+#root {
+  padding: 0;
+  text-align: center;
+}
+
+body {
+  overflow-y: scroll;
+  margin: 0;
+  padding: 0;
+}
+
+/* NavBar Styles */
+
+.navbar {
+  background-color: #363434;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2px 20px;
+  z-index: 1; 
+}
+
+.company-title {
+  text-align: left;
+}
+
+.company-title h2 {
+  margin: 0;
+  font-size: 24px;
+  font-family: 'Lilita One', cursive;
+  color: #989595;
+}
+
+.navbar-icon {
+  font-size: 1.5rem;
+  margin-right: 0.5rem;
+  color: rgb(111, 109, 109);
+}
+
+.navbar-list {
+  display: flex;
+  list-style-type: none;
+  padding: 0;
+  margin-right: 3em;
+  margin-left: auto;
+}
+
+.navbar-item {
+  padding: 3px;
+}
+
+.navbar-link {
+  font-size: 18px;
+  color: #eee;
+  text-decoration: none;
+  padding: 8px;
+  border-radius: 3px;
+  background-color: #545050;
+}
+
+.navbar-link:hover {
+  color: #333;
+  background-color: #777;
+}
+
+/* SlideShow styles */
+
+.slideshow-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.slideshow-slide img {
+  max-width: 900px; /* adjust as needed */
+  width: 100%;
+  height: auto;
+}
+
+.slideshow-text-container {
+  text-align: center;
+  max-width: 80%; /* adjust as needed */
+  margin-top: 2rem; /* adjust as needed */
+}
+
+
+.slideshow-text {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  color: #fff;
+  width: 80%; /* Adjust the width as needed */
+  max-height: 200px; /* Set a maximum height for the container */
+}
+
+/* Services Page */
+
+.service-parent {
+  width: 100%;
+}
+
+.service-images {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  margin: 50px 0;
+  padding-top: 50px;
+}
+
+.service-images figure {
+  text-align: center;
+  margin: 0 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: transform 0.3s ease;
+}
+
+.service-images figure figcaption {
+  padding: 5px;
+}
+
+.service-images figure h3 {
+  font-size: 32px;
+  margin: 0;
+  text-decoration: underline;
+}
+
+.service-images figure:hover {
+  transform: translateY(-5px);
+}
+
+.service-images img {
+  width: 250px;
+  height: auto;
+}
+
+.service-images figcaption {
+  background-color: #505050;
+  text-align: center;
+  margin-top: 20px;
+  padding: 20px;
+  border-radius: 6px;
+  width: 220px;
+  height: 220px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  font-family: 'Architects Daughter', cursive;
+  color: #fff;
+}
+
+.service-images h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.service-images ul {
+  list-style-type: none;
+  padding: 0;
+  margin-top: 10px;
+}
+
+.service-images li {
+  padding: 5px;
+  font-size: 18px;
+}
+
+.services-container p {
+  margin: 0;
+  color: #fff;
+}
+
+.services-container h3 {
+  font-size: 36px;
+  margin-bottom: 10px;
+  color: #fff;
+  padding: 0;
+  margin-top: 0;
+}
+
+.services-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-top: 50px;
+  gap: 50px;
+  width: 100%;
+  box-sizing: border-box;
+  margin-left: 10px;
+}
+
+.services-container .service-item {
+  flex-basis: calc(50% - 25px); /* Adjust the spacing as needed */
+  padding: 20px;
+  background-color: #625e5e;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  font-family: 'Architects Daughter', cursive;
+  line-height: 1.6;
+  color: #fff;
+  z-index: 2;
+}
+
+.services-container .service-item:nth-child(odd) {
+  text-align: left;
+}
+
+.services-container .service-item:nth-child(even) {
+  text-align: right;
+  margin-left: 48%;
+}
+
+.service-item:hover {
+  transform: translateY(-5px);
+}
+
+/* About Us Page Styles */
+
+.aboutus-content {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 25px;
+  background-color: #4a4a4a;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 6px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.aboutus-content h2 {
+  font-size: 24px;
+  color: #fff;
+  margin-bottom: 20px;
+}
+
+.aboutus-content p {
+  color: #fff;
+  line-height: 1.6;
+}
+
+
+/* Footer Styles */
+
+.bottom-banner {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+}
