@@ -1,4 +1,5 @@
 import React from 'react'
+import BottomBanner from './BottomBanner'
 
 function Store() {
   return (
@@ -64,6 +65,7 @@ function Store() {
           </p>
         </div>
         </div>
+            <BottomBanner />
         </div> 
          )
 }
